@@ -1,0 +1,82 @@
+﻿<Page
+    x:Class="MyTimeTable.Exams"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyTimeTable"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Beige">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock></TextBlock>
+
+
+        <TextBlock> </TextBlock>
+        <TextBlock Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Column="2"></TextBlock>
+
+        <TextBlock Grid.Row="1"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" FontSize="36" FontWeight="Bold">Upcoming Exams</TextBlock>
+
+        <TextBlock Grid.Row="2"></TextBlock>
+
+        <TextBlock Grid.Row="2" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1">English</TextBlock>
+
+        <TextBlock Grid.Row="3"></TextBlock>
+
+        <TextBlock Grid.Row="3" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1">Irish</TextBlock>
+
+        <TextBlock Grid.Row="4"></TextBlock>
+
+        <TextBlock Grid.Row="4" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1">Business</TextBlock>
+
+        <TextBlock Grid.Row="5"></TextBlock>
+
+        <TextBlock Grid.Row="5" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1">Music</TextBlock>
+
+        <TextBlock Grid.Row="6"></TextBlock>
+
+        <TextBlock Grid.Row="6" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="6" Grid.Column="1">Maths</TextBlock>
+
+        <TextBlock Grid.Row="7"></TextBlock>
+
+        <TextBlock Grid.Row="7" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1">Geography</TextBlock>
+        
+        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center"/>
+        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center"/>
+        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center"/>
+        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center"/>
+        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center"/>
+        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center"/>
+    
+        <Grid Grid.ColumnSpan="3" Grid.Row="9" HorizontalAlignment="Center">
+            <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Left" Margin="-27,-25,0,-3" VerticalAlignment="Top" Height="112" Width="211" FontSize="36" FontFamily="Times New Roman" BorderThickness="3,2,3,2" BorderBrush="Aqua" Foreground="Maroon" Background ="PaleTurquoise" Click="Home_Click"/>
+        </Grid>
+        </Grid>
+</Page>

@@ -1,0 +1,83 @@
+﻿<Page
+    x:Class="MyTimeTable.Results"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyTimeTable"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Beige">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock></TextBlock>
+
+
+        <TextBlock></TextBlock>
+        <TextBlock Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Column="2"></TextBlock>
+
+       <!-- <TextBlock Grid.Row="1"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" FontSize="36" FontWeight="Bold">Results</TextBlock>
+-->
+        <TextBlock Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1">English</TextBlock>
+
+        <TextBlock Grid.Row="3" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1">Irish</TextBlock>
+
+        <TextBlock Grid.Row="4" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1">Business</TextBlock>
+
+        <TextBlock Grid.Row="5" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1">Music</TextBlock>
+
+        <TextBlock Grid.Row="6" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="1">Maths</TextBlock>
+
+        <TextBlock Grid.Row="7" Grid.Column="1"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1">Internet and Mobile App</TextBlock>
+
+        <TextBlock Grid.Row="2" Grid.Column="2" FontFamily="Segoe UI"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2">82%</TextBlock>
+
+        <TextBlock Grid.Row="3" Grid.Column="2"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2">64%</TextBlock>
+
+        <TextBlock Grid.Row="4" Grid.Column="2"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2">73%</TextBlock>
+
+        <TextBlock Grid.Row="5" Grid.Column="2"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="2">74%</TextBlock>
+
+        <TextBlock Grid.Row="6" Grid.Column="2"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="2">86%</TextBlock>
+
+        <TextBlock Grid.Row="7" Grid.Column="2"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="2" FontWeight="Bold">100%</TextBlock>
+
+        <Grid Grid.ColumnSpan="4" Grid.Row="9" HorizontalAlignment="Center">
+            <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Center" Margin="-27,-25,0,-3" VerticalAlignment="Top" Height="112" Width="211" FontSize="36" FontFamily="Segoe UI" BorderThickness="3,2,3,2" BorderBrush="Aqua" Foreground="Maroon" Background ="PaleTurquoise" Click="Home_Click"/>
+        </Grid>
+        <TextBlock Grid.ColumnSpan="4" HorizontalAlignment="Center" Grid.RowSpan="2" Text="Results" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontWeight="Bold"/>
+    </Grid>
+</Page>

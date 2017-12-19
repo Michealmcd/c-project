@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="MyTimeTable.TimeTable"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyTimeTable"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Beige">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock>0</TextBlock>
+
+
+        <TextBlock> Days | Times</TextBlock>
+        <TextBlock Grid.Column="1">9:00 - 10:00</TextBlock>
+        <TextBlock Grid.Column="2">10:00 - 11:00</TextBlock>
+        <TextBlock Grid.Column="3">11:00 - 12:00</TextBlock>
+        <TextBlock Grid.Column="4">12:00 - 13:00</TextBlock>
+        <TextBlock Grid.Column="5">13:00 - 14:00</TextBlock>
+        <TextBlock Grid.Column="6">14:00 - 15:00</TextBlock>
+        <TextBlock Grid.Column="7">15:00 - 16:00</TextBlock>
+
+        <TextBlock Grid.Row="1">Monday</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1">P.E.</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2">Music</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="3">Irish</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="4">Geography</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="5">History</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="6">English</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="7">Maths</TextBlock>
+
+        <TextBlock Grid.Row="2">Tuesday</TextBlock>
+
+        <TextBlock Grid.Row="2" Grid.Column="1">Spanish</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2">English</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="3">Music</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="4">Business</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="5">Science</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="6">Geography</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="7">History</TextBlock>
+
+        <TextBlock Grid.Row="3">Wendesday</TextBlock>
+
+        <TextBlock Grid.Row="3" Grid.Column="1">English</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="2">Computing</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="3">Irish</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="4">Science</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="5">History</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="6">Spanish</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="7">Maths</TextBlock>
+
+        <TextBlock Grid.Row="4">Thursday</TextBlock>
+
+        <TextBlock Grid.Row="4" Grid.Column="1">Irish</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="2">Art</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="3">Business</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="4">Geography</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="5">Spanish</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="6">English</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="7">Computing</TextBlock>
+
+        <TextBlock Grid.Row="5">Friday</TextBlock>
+
+        <TextBlock Grid.Row="5" Grid.Column="1">Business</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="2">Maths</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="3">Art</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="4">P.E.</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="5">History</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="6">Science</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="7">Music</TextBlock>
+        
+        <Grid Grid.Column="4" Grid.Row="7">
+        <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Left" Margin="-27,-25,0,-3" VerticalAlignment="Top" Height="112" Width="211" FontSize="36" FontFamily="Times New Roman" BorderThickness="3,2,3,2" BorderBrush="Aqua" Foreground="Maroon" Background ="PaleTurquoise" Click="Home_Click"/>
+        </Grid>
+    </Grid>
+</Page>

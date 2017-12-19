@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="MyTimeTable.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyTimeTable"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" FontFamily="Times New Roman">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Center" Margin="50,200,0,0" Text="About" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="238" FontFamily="Times New Roman" FontSize="48" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="412,348,0,0" Text="One the the biggest problems in college life is keeping track of classes, Exam dates and a students results. With this TimeTable it is aimed to keep students on track, no longer will a student be struggling to find what class they have, what result they're on or when they're next Exam is due. With this timetable students can now worry about the more important things and have one less thing to have to try adn keep orginized." TextWrapping="Wrap" VerticalAlignment="Top" Height="243" Width="670" FontSize="24"/>
+
+
+        <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Center" Margin="50,700,0,0" VerticalAlignment="Top" Width="265" Height="95" FontSize="36" FontFamily="Times New Roman" FontWeight="Normal" BorderThickness="3,2,3,2" BorderBrush="Aqua" Foreground="Maroon" Background ="PaleTurquoise" Click="HomeButton_Click"/>
+        </Grid>
+</Page>
